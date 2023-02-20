@@ -7,10 +7,11 @@
 
 #home-view .alert .close {
     margin-left: .5rem
+
 }
 
 #profile-layout {
-    background: #fafafa
+    background:linear-gradient(green,#7F7FD5 , #91EAE4,rgb(106, 75, 75))
 }
 
 @media screen and (min-width: 998px) {
@@ -44,7 +45,8 @@
 
 .info {
     display: block;
-    text-align: center
+    text-align: center;
+    padding-bottom:30px
 }
 
 .info[href="javascript:void"] {
@@ -72,7 +74,7 @@
 
 @media screen and (max-width: 997px) {
     .info>header {
-      color: #292b2c;
+      color: #2f81a8;
     }
 }
 
@@ -108,14 +110,14 @@
 
 @media screen and (min-width: 998px) {
     .info .info-text {
-        color:#343434
+        color:#d04444
     }
 }
 
 @media screen and (max-width: 997px) {
     .info .info-text {
         display:inline-block;
-        color: white
+        color: rgb(110, 80, 80)
     }
 }
 
@@ -125,7 +127,7 @@
 
 @media screen and (max-width: 997px) {
     .info .info {
-        color:rgba(255,255,255,0.8)
+        color:rgba(125, 65, 65, 0.8)
     }
 }
 .name{
@@ -138,7 +140,8 @@
 }
 
 .presenter .presenter-basic {
-    background: white;
+    background: linear-gradient(135deg, #009bec, #91ffa3), linear-gradient(#c4c4c4, #c4c4c4);
+    opacity: 0.65;
     text-align: center;
     padding-bottom: 49px;
     padding-top: 43px;
@@ -147,7 +150,8 @@
 
 @media screen and (min-width: 998px) {
     .presenter .presenter-basic {
-        background:white;
+        background:linear-gradient(240deg, #009bec, #91ffa3), linear-gradient(#c4c4c4, #c4c4c4);
+        opacity: 0.65;
         width: 424px;
         height: 390px;
         float: left
@@ -332,8 +336,8 @@
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
     border: 1px solid #d6d6d6;
     overflow: hidden;
-    margin-bottom: 49px;
-    background: #ffffff;
+    margin-bottom: 20px;
+    background:linear-gradient(#0F3443 , #34E89E);
     position: relative;
     transition: all .5s ease
 }
@@ -344,6 +348,7 @@
 }
 
 .project .container-fluid {
+
     padding-left: 28px;
     padding-right: 28px
 }
@@ -359,7 +364,7 @@
     font-size: 1.17rem;
     width: 100%;
     height: 182.7px;
-    color: white;
+    color: rgb(159, 35, 35);
     text-align: center;
     padding-top: 4.5rem;
     transition: all .5s ease
@@ -376,7 +381,7 @@
 }
 
 .project .project-thumbnail:hover,.project .project-thumbnail span:hover {
-    background: rgba(0,0,0,0.65)
+    background: rgba(78, 43, 43, 0.65)
 }
 
 .project .project-link {
@@ -389,49 +394,26 @@
 }
 
 .project .project-title {
-    color: #01a0ed;
-    font-family: Montserrat, sans-serif;
-    font-size: 16px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin: 16px 0 10px 0
+    padding-top: 10px;
+    margin: 0px 0 0px 0
 }
 
 .project .project-description {
-    line-height: 1.4;
-    height: 44px;
-    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    height: 60px;
+    font-size: 20px;
     overflow: hidden;
-    color: rgba(52,52,52,0.77)
+    padding-top: 05px;
+    color: rgba(198, 26, 26, 0.77)
 }
 
-.project>footer {
-    background-color: #f4f4f4;
-    border-top: 1px solid #d6d6d6;
-    text-align: right;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    font-size: 12px
-}
-
-.project>footer .project-language {
-    color: rgba(52,52,52,0.5)
-}
-
-.project>footer a.project-repository {
-    color: rgba(52,52,52,0.8)
-}
-
-.project>footer a.project-repository:hover {
-    color: #01a0ed
-}
-
-.project>footer a.project-repository i {
-    font-size: 16px;
-    margin-right: 5px;
-    transform: translateY(2px)
-}
 
 .projects .project {
     margin-bottom: 1.75rem
@@ -553,12 +535,13 @@
 }
 
 .thumbnail {
-    position: relative;
-    height: 182.7px
+    background-color: hsl(91, 42%, 38%);
+    position: center;
+    height: 250.7px
 }
 
 .thumbnail .thumbnail-generated {
-    height: 182.7px;
+    height: 0.7px;
     text-align: center
 }
 
@@ -572,3 +555,34 @@
     font-weight: bold;
     letter-spacing: 1.3px
 }
+
+
+img {
+    border: 0px solid #ddd; /* Gray border */
+    border-radius: 5px;  /* Rounded border */
+    padding: 1px; /* Some padding */
+    width: 350px;
+    height: 250px; /* Set a small width */
+  }
+
+  img:hover {
+    box-shadow: 2px 4px 3px 4px rgba(152, 129, 27, 0.5);
+  }
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+
+  .container:hover .overlay {
+    opacity: 1;
+  }
