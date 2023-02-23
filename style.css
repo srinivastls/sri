@@ -348,7 +348,10 @@
 }
 
 .project .container-fluid {
-   
+    background-color: #279c95;
+    height: 300px;
+    text-align: center;
+    padding-top: 50px;
     padding-left: 28px;
     padding-right: 28px
 }
@@ -377,7 +380,7 @@
 }
 
 .project .project-thumbnail,.project .project-thumbnail span {
-    background: rgba(0,0,0,0.5)
+    background: rgba(185, 53, 53, 0.5)
 }
 
 .project .project-thumbnail:hover,.project .project-thumbnail span:hover {
@@ -394,9 +397,9 @@
 }
 
 .project .project-title {
-    color: white;
+    color: black;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size: 23px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -411,7 +414,7 @@
     font-size: 20px;
     overflow: hidden;
     padding-top: 05px;
-    color: rgba(198, 26, 26, 0.77)
+    color:white
 }
 
 
@@ -462,91 +465,17 @@
     }
 }
 
-.social {
-    display: inline-block;
-    transition: all .1s linear;
-    border-radius: .1rem;
-    outline: none;
-    font-size: 1.25rem
-}
 
-.social-github:hover,.social-github:focus,.social-github:active {
-    color: #aaa !important
-}
-
-.social-linkedin:hover,.social-linkedin:focus,.social-linkedin:active {
-    color: #0077b5 !important
-}
-
-.social-angellist:hover,.social-angellist:focus,.social-angellist:active {
-    color: #999 !important
-}
-
-.social-twitter:hover,.social-twitter:focus,.social-twitter:active {
-    color: #1da1f2 !important
-}
-
-.social-facebook:hover,.social-facebook:focus,.social-facebook:active {
-    color: #3b5998 !important
-}
-
-.social-google-plus:hover,.social-google-plus:focus,.social-google-plus:active {
-    color: #dd4b39 !important
-}
-
-.social-stack_overflow:hover,.social-stack_overflow:focus,.social-stack_overflow:active {
-    color: #f48024 !important
-}
-
-.social-codepen:hover,.social-codepen:focus,.social-codepen:active {
-    color: #000 !important
-}
-
-.social-jsfiddle:hover,.social-jsfiddle:focus,.social-jsfiddle:active {
-    color: #3099f4 !important
-}
-
-.social-medium:hover,.social-medium:focus,.social-medium:active {
-    color: #00ab6c !important
-}
-
-.social-blog:hover,.social-blog:focus,.social-blog:active {
-    color: #f57d00 !important
-}
-
-.social-behance:hover,.social-behance:focus,.social-behance:active {
-    color: #1769ff !important
-}
-
-.social-dribbble:hover,.social-dribbble:focus,.social-dribbble:active {
-    color: #ea4c89 !important
-}
-
-.social-pinterest:hover,.social-pinterest:focus,.social-pinterest:active {
-    color: #bd081c !important
-}
-
-.socials {
-    text-align: center
-}
-
-.socials .social {
-    margin: 0 .75rem
-}
 
 .thumbnail {
-    background-color: hsl(91, 42%, 38%);
+    background-color: hsl(264, 30%, 56%);
     position: center;
-    height: 250.7px
+    height: 300.7px
 }
 
-.thumbnail .thumbnail-generated {
-    height: 0.7px;
-    text-align: center
-}
 
 .thumbnail .thumbnail-title {
-    color: rgba(255,255,255,0.8);
+    color: rgba(198, 39, 39, 0.8);
     text-align: center;
     padding-top: 5rem;
     white-space: nowrap;
@@ -562,37 +491,20 @@ img {
     border-radius: 5px;  /* Rounded border */
     padding: 1px; /* Some padding */
     width: 350px;
-    height: 250px; /* Set a small width */
+    height: 300px; /* Set a small width */
   }
 
   img:hover {
     box-shadow: 2px 4px 3px 4px rgba(152, 129, 27, 0.5);
   }
 
-  
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #008CBA;
-  }
-
-  .container:hover .overlay {
-    opacity: 1;
-  }
 
 
   /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-box {
     background-color: transparent;
    
-    border: 1px solid #f1f1f1;
+    border: 1px solid #874747;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }
   
@@ -628,7 +540,8 @@ img {
   
   /* Style the back side */
   .flip-box-back {
-    background-color: dodgerblue;
-    color: white;
+    background-color: rgb(79, 131, 183);
+    color: rgb(207, 186, 64);
+    font-family:'Times New Roman', Times, serif;
     transform: rotateY(180deg);
   }
